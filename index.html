@@ -1,0 +1,47 @@
+<!doctype html>
+<!--	Sala de control de tráfico (By: MaToLeOt) index.html -->
+
+<html lang="es-ES">
+
+	<head>
+		<title>Sala de Tr&aacute;fico</title>
+   		<meta charset="UTF-8" />
+    		<meta name="author" content="Marcos Leiros" />
+   		<meta name="description" content="PiTraffic Sala de Control de Tráfico" />
+    		<meta name="keywords" content="PiTraffic, Raspberry, Pi, Semáforo, Control" />
+                <meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-store" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+		<link rel="icon" type="image/png" href="img/semaicon.png">
+  	</head>
+
+  	<body>
+		<h3> Acceso a la sala control de tr&aacute;fico</h3>
+
+ 		<div id="wrapper">
+
+			<div id="primary"></div>
+
+			<div id="secondary">
+				<form action="php/login.php" method="post">
+					<span class="text-center">LOGIN</span>
+					<div class="input-container">
+						<input type="text" size="25" maxlenght="25" required="required" name="usuario" value="" />
+						<label>Usuario</label>		
+					</div>
+					<div class="input-container">		
+						<input type="password" size="25" maxlenght="25" required="required" name="clave" value="" />
+						<label>Clave</label>
+					</div>
+					<button type="submit" class="btn">ENTRAR</button>
+				</form>	
+			</div>
+
+	    	</div>
+		<span class="varios">By: MaToLeOt (-_-)</span>
+	</body>
+
+</html>
+

@@ -1,0 +1,286 @@
+/* Sala de control de tráfico (By: MaToLeOt) salatrafico.css */
+
+/* Bloque estilos general --------------------------------------- */
+body{
+	padding: 3px 3px 3px 3px;
+	font-family: Verdana, sans-serif;
+	font-weight:bold;
+	font-size: 12pt;
+	text-align:center;
+ }
+h3{
+	margin-top: -8px;
+	margin-bottom: 8px;
+ }
+table, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #d8dbe2;
+ }
+span.semaforonseo{
+	color:grey;
+ }
+/* ----------------------------------------------------------------------- */
+ div#semaforos div#semN, div#semaforos div#semS, div#semaforos div#semE, div#semaforos div#semW{
+	display:inline;
+ }
+ canvas#semN, canvas#semS, canvas#semE, canvas#semW{
+        margin-right:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+ }
+/* ----------------------------------------------------------------------- */
+div#dselect{
+	display: inline;
+	float:left;
+ }
+select.stiempo{
+	margin-left:2px;
+	margin-right:5px;
+ }
+/* ----------------------------------------------------------------------- */
+div#total{	
+	display: inline;
+	float:left;
+	text-align:left;
+}
+div#wrappercheks{
+	display:inline;
+	float:left;
+}
+input[type='checkbox'].pie{
+	margin-left:2px;
+	margin-right:8px;
+ }
+input[type='submit']{
+  	margin-top: 6px;
+ }
+div#imgbuzzer{
+  	display:inline;
+	float:center;
+ }
+img#ibuzz{
+	width:46px;
+	height:46px;
+	margin-top:3px;
+	visibility:hidden;
+ }
+/* ----------------------------------------------------------------------- */
+input[type='radio'], input[type='checkbox'], input[type='submit'], select.stiempo{
+  	cursor: pointer;
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo pc escritorio alta resolución ---------------*/
+@media screen and (min-width: 1601px){
+ 	body{
+		background-image: url("../img/semaforo-interseccion_1920-1080.jpg");
+		background-position: center;
+		background-repeat: repeat;
+		background-attachment: fixed;
+ 	}
+ 	table{
+		transform: scale(1.55, 1.55);
+		transform-origin: center 0 0;
+		box-shadow: 10px 10px 10px;
+ 	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD  modo pc escritorio resolución media -----------*/
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+ 	body{
+		background-image: url("../img/semaforo-interseccion_1920-1080.jpg");
+		background-position: center;
+		background-repeat: repeat;
+		background-attachment: fixed;
+ 	}
+ 	table{
+		transform: scale(1.04, 1.04);
+		transform-origin: center 0 0;
+		box-shadow: 6px 6px 6px;
+ 	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo pc escritorio resolución baja ------------- */
+ @media screen and (min-width: 621px) and (max-width: 1280px) { 
+ 	body{
+		background-image: url("../img/semaforo-interseccion_1920-1080.jpg");
+		background-position: center;
+		background-repeat: repeat;
+		background-attachment: fixed;
+	}
+ 	table{
+		transform: scale(0.9, 0.9);
+		transform-origin: center 0 0;
+		box-shadow: 3px 3px 3px;
+ 	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo smartphone ------------------------------------ */
+ @media screen and (max-width: 620px){
+ 	body{
+		background-image: none;
+		background-color:green;
+	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* Bloque estilos checkbox automan ---------------------- */
+/* Formateamos el label que servirá de contenedor */
+.container1 {
+	width: auto;
+	display:inline;
+	margin-left:-8px;
+}
+.switch {
+  	position: relative;
+  	display: inline-block;
+ 	width: 53px;
+ 	height: 25px;
+	top:5px;
+}
+/* Ocultamos el checkbox html */
+.switch input {
+  	display:none;
+}
+/* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control */
+.slider {
+  	position: absolute;
+  	cursor: pointer;
+ 	 top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #ccc; /* color fondo */
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+/* Pintamos la perilla de control o slider usando el selector before */
+.slider:before {
+  	position: absolute;
+  	content: "";
+  	height: 24px;
+  	width: 24px;
+  	left: 0px;
+  	bottom: -0.5px;
+  	background-color: #000;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+/* Cambiamos el color de fondo cuando el checkbox esta activado */
+input:checked + .slider {
+  	background-color: #E27AD8;
+}
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
+input:checked + .slider:before {
+  	-webkit-transform: translateX(27px);
+  	-ms-transform: translateX(27px);
+  	transform: translateX(27px);
+}
+/* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+.slider.round {
+	border-radius: 34px;
+	border: 1px solid blue;
+}
+.slider.round:before {
+  	border-radius: 50%;
+}
+/* ----------------------------------------------------------------------- */
+
+/* Bloque estilos reset  ----------------------------------------- */
+.container2 {
+	width: auto;
+	display:inline;
+	margin-left:40px;
+}
+.btn {
+  	cursor: pointer;
+  	margin: 20px auto;
+  	border: none;
+  	padding: 0px 2px;
+  	font-size: 19px;
+  	position: relative;
+	background: #ccc;	/* color fondo */
+	border: 1px solid blue;
+}
+.btn::before {
+  	transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.20);
+  	content: "";
+  	width: 50%;
+  	height: 100%;
+  	background: black;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+.btn:hover::before {
+ 	background: black;
+  	width: 100%;
+}
+.btn.rounded {
+  	border-radius: 50px;
+}
+.btn.rounded .text-green {
+  	color:#00f0b5;	/* color texto interno con cursor encima */ 
+  	mix-blend-mode: difference;
+}
+.btn.rounded::before {
+ 	border-radius: 50px;
+  	width: 48%;
+  	background: #000;		/* color círculo*/
+}
+.btn.rounded:hover::before {
+ 	background: #E27AD8;	/* color rosado */
+  	width: 100%;
+}
+/* ----------------------------------------------------------------------- */
+
+/* Bloque estilos radio RAV ----------------------------------- */
+/* Contenedores */
+.container{width: 300px; margin: 0 auto;}
+.four{ width: 32%;}
+/* Columnas */
+.col{
+  	display: block;
+ 	float:left;
+ 	margin: 1% 0 1% 1.6%;
+}
+.col:first-of-type {margin-left: 0;}
+
+/* Formulario */
+.form input{
+	display: none;
+}
+.form label{
+	position: relative;
+	color: #000;	
+	background-color: #aaa;
+	font-size: 16px;
+	text-align: center;
+	height: 25px;
+	line-height: 15px;
+	display: block;
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.radiosem:checked  + label{
+	border: 3px solid #333;
+}
+#norter:checked  + label, #surr:checked  + label, #ester:checked  + label, #oester:checked  + label{
+	background-color: #dc0000;
+}
+#nortea:checked + label, #sura:checked + label, #estea:checked + label, #oestea:checked + label{
+	background-color: #ffc800;
+}
+#nortev:checked + label, #surv:checked + label, #estev:checked + label, #oestev:checked + label{
+	background-color: #00aa00;
+}
+/* ----------------------------------------------------------------------- */

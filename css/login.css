@@ -1,0 +1,21 @@
+/* Sala de control de tráfico (By: MaToLeOt) login.css */
+
+/* estilos generales ----------------------------------------------- */
+ body{
+	background-image: url("../img/semaforo-interseccion_1920-1080.jpg");
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	padding: 3px 3px 3px 3px;
+	background-color: #d8dbe2;
+	font-family: Verdana, sans-serif;
+	font-weight:bold;
+	font-size: 13pt;
+	text-align: center;
+ }
+img#prohibido{
+	width:35%;
+	height:35%;
+ }
+/* ----------------------------------------------------------------------- */
+

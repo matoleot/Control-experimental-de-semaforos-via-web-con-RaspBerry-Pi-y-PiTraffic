@@ -1,0 +1,185 @@
+/* Sala de control de tráfico (By: MaToLeOt) index.css */
+
+/* estilos globales ------------------------------------------------ */
+ body{
+	background-image: url("../img/semaforo-interseccion_1920-1080.jpg");
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	padding: 3px 3px 3px 3px;
+	background-color: #d8dbe2;
+	font-family: Verdana, sans-serif;
+	font-weight:bold;
+	font-size: 13pt;
+	text-align: center;
+ }
+h3{
+	margin-top:4px;
+	margin-bottom:4px;
+}
+div#wrapper{
+	text-align: center;
+ }
+/* ----------------------------------------------------------------------- */
+
+/* eslilo login ------------------------------------------------------- */
+div#secondary{
+        background-color: rgba(0, 0, 0, 0.8);
+	border-radius:8px;
+	padding:70px 100px;
+}
+div#secondary span.text-center{
+	color:#fff;	
+    	font-size: 23px;
+    	/*margin: 25px 0 80px 0;*/
+    	display: block;
+    	text-align: center;
+}
+div#secondary div.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+div#secondary div.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+    	pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+div#secondary div.input-container input{ 
+  	border:0;
+ 	border-bottom:1px solid #555;  
+  	background:transparent;
+  	width:100%;
+  	padding:8px 0 5px 0;
+  	font-size:16px;
+  	color:#fff;
+}
+div#secondary div.input-container input:focus{ 
+ 	border:none;	
+ 	outline:none;
+ 	border-bottom:1px solid #e74c3c;	
+}
+div#secondary button.btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    	border: 0;
+    	color: #fff;
+	padding:10px 20px;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+div#secondary div.input-container input:focus ~ label,
+div#secondary div.input-container input:valid ~ label{
+	top:-14px;
+	font-size:12px;
+}
+/* ----------------------------------------------------------------------- */
+
+/* RWD generales para resoluciones PC ------------------*/
+@media screen and (min-width: 621px) {
+ 	div#wrapper{
+		width:80%;
+		margin:20px auto 20px auto;
+ 	}
+	div#primary, div#secondary{
+		margin: 0px auto 0px auto;
+	}
+ 	div#primary{
+		vertical-align:top;
+		border-radius:8px;
+		display:inline-block;
+		background-repeat: no-repeat;
+		background:url("../img/pitraffic_logo.png");
+		background-size:cover;
+	}
+ 	div#secondary{
+		display:inline-block;
+	}
+	span{
+		display:block;
+		padding-top:30px;
+ 	}
+}
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo pc escritorio alta resolución ---------------*/
+@media screen and (min-width: 1601px){
+ 	div#primary{
+		width:550px;
+		height:550px;
+ 	}
+ 	div#secondary{
+		width:350px;
+		height:410px;
+ 	}
+	div#secondary span.text-center{
+    		margin: 25px 0 80px 0;
+	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo pc escritorio resolución media -----------*/
+@media screen and (min-width: 1367px) and (max-width: 1600px) {
+ 	div#primary{
+		width:450px;
+		height:450px;
+ 	}
+ 	div#secondary{
+		width:250px;
+		height:310px;
+ 	}
+	div#secondary span.text-center{
+    		margin: 0px 0 50px 0;
+	}
+ }
+/* ----------------------------------------------------------------------- */
+ 
+/* RWD modo pc escritorio resolución baja ------------- */
+ @media screen and (min-width: 621px) and (max-width: 1366px) { 
+ 	div#primary{
+		width:350px;
+		height:350px;
+ 	}
+ 	div#secondary{
+		width:150px;
+		height:210px;
+ 	}
+	div#secondary span.text-center{
+    		margin: -70px 0 50px 0;
+	}
+ }
+/* ----------------------------------------------------------------------- */
+
+/* RWD modo smartphone ------------------------------------ */
+ @media screen and (max-width: 620px){
+ 	div#wrapper{
+		width:100%;
+		margin:3px auto 3px auto;
+ 	}
+ 	div#primary{
+		width:auto;
+ 	}
+ 	div#secondary{
+		width:auto;
+ 	}
+	div#secondary span.text-center{
+    		margin: -70px 0 50px 0;
+	}
+	h3{
+		font-size: 13pt;
+		margin-bottom:8px;
+	}
+	span{
+		display:block;
+		padding-top:12px;
+                margin-bottom:16px;
+ 	}
+ }
+/* ----------------------------------------------------------------------- */
+
