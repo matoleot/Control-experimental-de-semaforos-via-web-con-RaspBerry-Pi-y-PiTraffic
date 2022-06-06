@@ -1,5 +1,3 @@
-# Control-experimental-de-semaforos-via-web-con-RaspBerry-Pi-y-PiTraffic
-
 # Experimental control of traffic lights via web with RaspBerry Pi and PiTraffic
 
 # Control experimental de semáforos vía web con RaspBerry Pi y PiTraffic
